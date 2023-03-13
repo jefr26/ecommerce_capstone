@@ -1,0 +1,83 @@
+---
+const pathname = new URL(Astro.request.url).pathname;
+const currentPath = pathname.slice(1);
+---
+
+<header class="container">
+	<nav class="navbar navbar-expand-lg">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="#" title="MarketSquare">
+				<img src="/logo.svg" alt="MarketSquare" width="250" height="80"/>
+			</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+				<ul class="navbar-nav mb-2 mb-lg-0">
+					<li class="nav-item">
+						<a
+							class={`nav-link mx-3 ${currentPath === '' ? 'active' : ''}`}
+							aria-current={`${currentPath === '' ? 'true' : 'false'}`}
+							href="/"
+							title="Home"
+						>
+							Home
+						</a>
+					</li>
+					<li class="nav-item">
+						<a
+							class={`nav-link mx-3 disabled ${currentPath === 'products' ? 'active' : ''}`}
+							aria-current={`${currentPath === 'products' ? 'true' : 'false'}`}
+							href="/products"
+							title="Products"
+						>
+							Products
+						</a>
+					</li>
+					<li class="nav-item">
+						<a
+							class={`nav-link ml-3 disabled ${currentPath === 'about' ? 'active' : ''}`}
+							aria-current={`${currentPath === 'about' ? 'true' : 'false'}`}
+							href="/about"
+							title="About"
+						>
+							About
+						</a>
+					</li>
+					<li class="nav-item">
+						<a
+							class={`nav-link mx-5 btn btn-secondary rounded-circle disabled ${currentPath === 'cart' ? 'active' : ''}`}
+							aria-current={`${currentPath === 'cart' ? 'true' : 'false'}`}
+							href="/cart"
+							title="Cart"
+							role="button"
+						>
+							<img src="/images/cart_icon.svg" alt="Cart" width="24" height="24" />
+						</a>
+					</li>
+					<li class="nav-item">
+						<a
+							class={`nav-link disabled ${currentPath === 'cart' ? 'active' : ''}`}
+							aria-current={`${currentPath === 'cart' ? 'true' : 'false'}`}
+							href="/signin"
+							title="Sign In"
+						>
+							Sign In
+						</a>
+					</li>
+					<li class="nav-item">
+						<a
+							class={`nav-link disabled ${currentPath === 'cart' ? 'active' : ''}`}
+							aria-current={`${currentPath === 'cart' ? 'true' : 'false'}`}
+							href="/signup"
+							title="Sign Up"
+						>
+							Sign Up
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+</header>
