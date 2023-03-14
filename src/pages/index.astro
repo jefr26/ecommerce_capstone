@@ -1,20 +1,31 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Home">
 	<main class="container">
-		<section class="main-content row py-5">
-			<h1 class="col-10 col-sm-6 fw-light align-middle">Find what you're looking for at MarketSquare's worldwide bazaar.</h1>
+		<section class="main-content row py-5" role="img">
+			<h1 class="col-10 col-sm-6 fw-light align-middle">
+				Find what you're looking for at MarketSquare's worldwide bazaar.
+			</h1>
 			<p class="col-10 col-md-4 offset-md-2 lead">
 				Join the global shopping revolution with MarketSquare.
-				<a class="font-monospace fs-5" href="/signup" title="Join the global shopping revolution with MarketSquare.">
+				<a
+					class="font-monospace fs-5"
+					href="/signup"
+					title="Join the global shopping revolution with MarketSquare."
+				>
 					Sign Up
 				</a>
 			</p>
 		</section>
 
-		<section class="categories mt-4 row">
+		<section class="categories mt-4 pt-4 row">
+			<h2 class="text-center mb-3">Fetatured products</h2>
+			<p class="text-center">
+				Lorem ipsum dolor sit amet consectetur adipiscing elit hac, a montes
+				libero dictum gravida molestie urna nec.
+			</p>
 			<div class="col-12 col-sm-3 mb-3 mb-sm-0 d-flex align-items-stretch">
 				<div class="shadow-sm card border-light">
 					<img src="/images/sofa-1.jpg" class="card-img-top" />
@@ -46,8 +57,102 @@ import Layout from '../layouts/Layout.astro';
 				<div class="shadow-sm card border-light">
 					<img src="/images/sofa-4.jpg" class="card-img-top" />
 					<div class="card-body d-flex flex-column">
-						<h5 class="card-title">Minimalist Leather Loveseat with Wood Detailing</h5>
+						<h5 class="card-title">
+							Minimalist Leather Loveseat with Wood Detailing
+						</h5>
 						<p class="card-text mt-auto align-self-start">$ 1.287</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="testimonials my-5 pt-4 row">
+			<h3 class="text-center mb-3">Testimonials</h3>
+			<p class="text-center mb-5">
+				Lorem ipsum dolor sit amet consectetur adipiscing elit hac, a montes
+				libero dictum gravida molestie urna nec.
+			</p>
+			<div class="col mb-3 mb-sm-0">
+				<div class="card border-0">
+					<div class="card-body">
+						<p class="card-title mb-5">
+							Lorem ipsum dolor sit amet consectetur adipiscing elit hac, a montes libero dictum gravida molestie urna nec, suscipit phasellus dapibus in magnis magna est.
+						</p>
+						<div class="row">
+							<div class="col-sm-2">
+								<img
+									src="https://randomuser.me/api/portraits/med/women/83.jpg"
+									width="50"
+									height="50"
+									alt="Ruby Olson"
+									class="rounded"
+								/>
+							</div>
+							<div class="col-sm-10">
+								<h5 class="cust-name">Ruby Olson</h5>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star"></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col mb-3 mb-sm-0">
+				<div class="card border-0">
+					<div class="card-body">
+						<p class="card-title mb-5">
+							Lorem ipsum dolor sit amet consectetur adipiscing elit hac, a montes libero dictum gravida molestie urna nec, suscipit phasellus dapibus in magnis magna est.
+						</p>
+						<div class="row">
+							<div class="col-sm-2">
+								<img
+									src="https://randomuser.me/api/portraits/med/women/96.jpg"
+									width="50"
+									height="50"
+									alt="Meghan Olson"
+									class="rounded"
+								/>
+							</div>
+							<div class="col-sm-10">
+								<h5 class="cust-name">Meghan Olson</h5>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star"></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col mb-3 mb-sm-0">
+				<div class="card border-0">
+					<div class="card-body">
+						<p class="card-title mb-5">
+							Lorem ipsum dolor sit amet consectetur adipiscing elit hac, a montes libero dictum gravida molestie urna nec, suscipit phasellus dapibus in magnis magna est.
+						</p>
+						<div class="row">
+							<div class="col-sm-2">
+								<img
+									src="https://randomuser.me/api/portraits/med/men/74.jpg"
+									width="50"
+									height="50"
+									alt="Lester Rogers"
+									class="rounded"
+								/>
+							</div>
+							<div class="col-sm-10">
+								<h5 class="cust-name">Lester Rogers</h5>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star"></span>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>

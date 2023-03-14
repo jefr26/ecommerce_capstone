@@ -16,11 +16,15 @@ main a{
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	border-radius: 1rem;
+	border-radius: .5rem;
 	min-height: 35rem;
 }
 .main-content h1, .main-content p.lean {
 	color: #fff;
 	margin-top: 20%;
 	mix-blend-mode: difference;
+}
+
+.fa.fa-star.checked {
+	color: orange;
 }
