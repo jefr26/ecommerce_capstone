@@ -36,7 +36,7 @@ const currentPath = pathname.slice(1);
 					</li>
 					<li class="nav-item">
 						<a
-							class={`nav-link ml-3 disabled ${currentPath === 'contact' ? 'active' : ''}`}
+							class={`nav-link ml-3 ${currentPath === 'contact' ? 'active' : ''}`}
 							aria-current={`${currentPath === 'contact' ? 'true' : 'false'}`}
 							href="/contact"
 							title="Contact"
@@ -46,18 +46,18 @@ const currentPath = pathname.slice(1);
 					</li>
 					<li class="nav-item">
 						<a
-							class={`nav-link mx-5 btn btn-secondary rounded-circle disabled ${currentPath === 'cart' ? 'active' : ''}`}
+							class={`nav-link mx-5 btn btn-secondary rounded-circle disabled p-2 ${currentPath === 'cart' ? 'active' : ''}`}
 							aria-current={`${currentPath === 'cart' ? 'true' : 'false'}`}
 							href="/cart"
 							title="Cart"
 							role="button"
 						>
-							<img src="/images/cart_icon.svg" alt="Cart" width="24" height="24" />
+							<img src="/images/cart_icon.svg" alt="Cart" width="20" height="20" />
 						</a>
 					</li>
 					<li class="nav-item">
 						<a
-							class={`nav-link disabled ${currentPath === 'cart' ? 'active' : ''}`}
+							class={`nav-link ${currentPath === 'cart' ? 'active' : ''}`}
 							aria-current={`${currentPath === 'cart' ? 'true' : 'false'}`}
 							href="/signin"
 							title="Sign In"

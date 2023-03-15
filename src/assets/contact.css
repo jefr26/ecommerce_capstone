@@ -1,0 +1,32 @@
+.contact .contact-info {
+	list-style: none;
+	padding: 0;
+}
+.contact .contact-info li {
+	margin-bottom: 1rem;
+	padding-left: 3rem;
+	position: relative;
+}
+.contact .contact-info li:before {
+	content: "";
+	position: absolute;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: 1.5rem;
+	width: 1.5rem;
+	height: 1.5rem;
+	left: 0;
+}
+
+.contact .contact-info li.address:before {
+	background-image: url('/images/pin_icon.svg');
+}
+.contact .contact-info li.phone:before {
+	background-image: url('/images/call_icon.svg');
+}
+.contact .contact-info li.email:before {
+	background-image: url('/images/mail_icon.svg');
+}
+.contact .contact-info li.url:before {
+	background-image: url('/images/link_icon.svg');
+}

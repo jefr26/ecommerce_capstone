@@ -1,0 +1,66 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import '../../assets/contact.css';
+---
+
+<Layout title="Contact">
+	<main class="contact container">
+		<h1 class="text-center my-3">Contact</h1>
+		<p class="text-center col-12 col-sm-6 offset-sm-3 mb-5">
+			Ridiculus vestibulum pulvinar praesent parturient aliquet fringilla hendrerit arcu dictum ornare, cras quisque curae consequat auctor risus et ad maecenas, nulla purus conubia leo a dui pharetra suscipit vitae.
+		</p>
+		<section class="row">
+			<form 
+				method="post" 
+				action="/contact/confirmation" 
+				netlify-honeypot="bot-field" 
+				data-netlify="true"
+				class="col-12 col-md-7 row"
+			>
+				<h2 class="mb-5">Get In Touch</h2>
+				<div class="hidden d-none">
+					<label for="bot-field">Don’t fill this out if you’re human: </label>
+					<input id="bot-field" name="bot-field" />
+				</div>
+				<div class="col-12 col-sm-6 mb-3">
+					<label for="first-name" class="form-label">First name</label>
+					<input type="text" class="form-control" id="first-name" name="first-name" required>
+				</div>
+				<div class="col-12 col-sm-6 mb-3">
+					<label for="last-name" class="form-label">Last name</label>
+					<input type="text" class="form-control" id="last-name" name="last-name" required>
+				</div>
+				<div class="col-12 mb-3">
+					<label for="email" class="form-label">E-mail</label>
+					<input type="email" class="form-control" id="email" name="email" placeholder="email@example.com" required>
+				</div>
+				<div class="col-12 mb-3">
+					<label for="subject" class="form-label">Subject</label>
+					<input type="text" class="form-control" id="subject" name="subject" required>
+				</div>
+				<div class="col-12 mb-3">
+					<label for="message" class="form-label">Message</label>
+					<textarea class="form-control" id="message" name="message" rows="5"></textarea>
+				</div>
+				<div class="col-12 mb-3 d-grid">
+					<button type="submit" class="btn btn-outline-secondary">Send</button>
+				</div>
+			</form>
+			<div class="col-12 col-sm-4 offset-sm-1">
+				<h2 class="mb-5">Contact info</h2>
+				<ul class="contact-info">
+					<li class="address">2791 W Pecan St, <br> Fairfield, Connecticut 19723</li>
+					<li class="phone">
+						<a href="tel://13592446457" title="+1 (359) 244-6457">+1 (359) 244-6457</a>
+					</li>
+					<li class="email">
+						<a href="mailto:info@market.square" title="info@market.square">info@market.square</a>
+					</li>
+					<li class="url">
+						<a href="https://market.square" title="market.square">market.square</a>
+					</li>
+				</ul>
+			</div>
+		</section>
+	</main>
+</Layout>
