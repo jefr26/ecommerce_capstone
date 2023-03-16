@@ -3,28 +3,23 @@
 	--bs-font-sans-serif: Poppins;
 	--bs-body-font-family: Poppins;
 	--bs-body-color: #3f524e;
+	--bs-success-rgb: 47,153,158;
 }
-header nav.navbar a.active {
+header nav.navbar a.active:not(.cart) {
 	border-bottom: 2px solid #3f524e;
 	color: #3f524e;
+}
+header nav.navbar .cart {
+	border-color: rgba(47, 153, 158, 0);
+	padding: .5rem .6rem !important;
+}
+header nav.navbar .cart .badge {
+	font-weight: 500;
+	padding: 0.25rem 0.4rem;
 }
 main a {
 	color: #11999e;
 	text-decoration: none;
-}
-.main-content {
-	background-image: url("/images/sofa.webp");
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	border-radius: 0.5rem;
-	min-height: 35rem;
-}
-.main-content h1,
-.main-content p.lean {
-	color: #fff;
-	margin-top: 20%;
-	mix-blend-mode: difference;
 }
 .fa.fa-star.checked {
 	color: orange;
@@ -34,4 +29,24 @@ main a {
 }
 .card:hover {
 	box-shadow: 0 0.125rem 0.25rem rgba(63, 82, 78, 0.45) !important;
+}
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus {   
+  border-color: rgba(63, 82, 78, .45);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075);
+  outline: 0 none;
 }

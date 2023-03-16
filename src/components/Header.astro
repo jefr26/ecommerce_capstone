@@ -46,19 +46,23 @@ const currentPath = pathname.slice(1);
 					</li>
 					<li class="nav-item">
 						<a
-							class={`nav-link mx-5 btn btn-secondary rounded-circle disabled p-2 ${currentPath === 'cart' ? 'active' : ''}`}
+							class={`cart nav-link mx-5 btn btn-outline-secondary bg-success rounded-circle position-relative p-2 ${currentPath === 'cart' ? 'active' : ''}`}
 							aria-current={`${currentPath === 'cart' ? 'true' : 'false'}`}
 							href="/cart"
 							title="Cart"
 							role="button"
 						>
 							<img src="/images/cart_icon.svg" alt="Cart" width="20" height="20" />
+							<span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+								2
+								<span class="visually-hidden">Products in cart</span>
+							</span>
 						</a>
 					</li>
 					<li class="nav-item">
 						<a
-							class={`nav-link ${currentPath === 'cart' ? 'active' : ''}`}
-							aria-current={`${currentPath === 'cart' ? 'true' : 'false'}`}
+							class={`nav-link ml-3 ${currentPath === 'signin' ? 'active' : ''}`}
+							aria-current={`${currentPath === 'signin' ? 'true' : 'false'}`}
 							href="/signin"
 							title="Sign In"
 						>
@@ -67,8 +71,8 @@ const currentPath = pathname.slice(1);
 					</li>
 					<li class="nav-item">
 						<a
-							class={`nav-link disabled ${currentPath === 'cart' ? 'active' : ''}`}
-							aria-current={`${currentPath === 'cart' ? 'true' : 'false'}`}
+							class={`nav-link ml-5 ${currentPath === 'signup' ? 'active' : ''}`}
+							aria-current={`${currentPath === 'signup' ? 'true' : 'false'}`}
 							href="/signup"
 							title="Sign Up"
 						>
@@ -79,5 +83,4 @@ const currentPath = pathname.slice(1);
 			</div>
 		</div>
 	</nav>
-
 </header>

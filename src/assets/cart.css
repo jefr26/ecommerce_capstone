@@ -1,0 +1,28 @@
+.cart .delete {
+	color: #11999e;
+	cursor: pointer;
+	padding-left: 1.5rem;
+	position: relative;
+}
+.cart .delete:before {
+	background-image: url(/images/trash_icon.svg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 1rem;
+	content: "";
+	position: absolute;
+	width: 1rem;
+	height: 1rem;
+	left: 0;
+	top: 0.09rem;
+}
+.cart .price {
+	position: absolute;
+	right: 1rem;
+}
+.cart .cart-prices table tr:last-of-type td {
+	border: none;
+}
+.cart .cart-prices .d-grid .position-absolute {
+	right: 1rem;
+}

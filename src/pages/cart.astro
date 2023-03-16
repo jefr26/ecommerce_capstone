@@ -1,0 +1,104 @@
+---
+import Layout from "../layouts/Layout.astro";
+import '../assets/cart.css';
+---
+
+<Layout title="Cart">
+	<main class="cart container">
+		<h1 class="text-center my-3">Shopping Cart</h1>
+		<section class="row">
+			<div class="cart-list col-12 col-md-7 row mt-5">
+				<div class="card mb-3">
+					<div class="row g-0">
+						<div class="col-md-2">
+							<img src="/images/chair-1.webp" class="img-fluid rounded-start" alt="...">
+						</div>
+						<div class="col-md-10">
+							<div class="card-body position-relative">
+								<h5 class="card-title">SEAT-OF-THE-ART Chair</h5>
+								<p class="card-text">Nisl fermentum nibh ornare penatibus egestas porttitor imperdiet maecenas, condimentum sed pharetra aptent euismod congue turpis senectus morbi.</p>
+								<p class="card-text">
+									<small class="delete">Delete</small>
+									<span class="price">$ 85.89</span>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="card mb-3">
+					<div class="row g-0">
+						<div class="col-md-2">
+							<img src="/images/chair-2.webp" class="img-fluid rounded-start" alt="...">
+						</div>
+						<div class="col-md-10">
+							<div class="card-body position-relative">
+								<h5 class="card-title">SEAT-OF-THE-ART Chair</h5>
+								<p class="card-text">Nisl fermentum nibh ornare penatibus egestas porttitor imperdiet maecenas, condimentum sed pharetra aptent euismod congue turpis senectus morbi.</p>
+								<p class="card-text">
+									<small class="delete">Delete</small>
+									<span class="price">$ 85.89</span>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-4 my-3 d-grid">
+					<a href="/products" class="btn btn-outline-secondary" tabindex="-1" role="button" title="Continue shopping">Continue shopping</a>
+				</div>
+			</div>
+			<div class="cart-prices col-12 col-md-4 offset-md-1">
+				<h4>Summary</h4>
+				<div class="table-container rounded border mt-3">
+					<table class="table mb-0">
+						<tbody>
+							<tr>
+								<td>Item Subtotal</td>
+								<td class="text-end">$ 171.78</td>
+							</tr>
+							<tr>
+								<td>Service Fee</td>
+								<td class="text-end">$ 3.00</td>
+							</tr>
+							<tr>
+								<td><strong>Subtotal</strong></td>
+								<td class="text-end">$ 174.78</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="d-grid my-3">
+					<button type="button" class="btn btn-success text-start position-relative">
+						Go to checkout
+						<span class="position-absolute">
+							$ 174.78
+						</span>
+					</button>
+				</div>
+				<small class="text-muted">
+					By placing your order, you agree to be bound by the Freshcart Terms of Service and Privacy Policy.
+				</small>
+				<hr>
+				<h5 class="my-3">Add Promo or Gift Card</h5>
+				<form 
+					method="post"
+					action="/cart"
+					netlify-honeypot="bot-field" 
+					data-netlify="true"
+					name="promo-code"
+				>
+					<div class="hidden d-none">
+						<label for="bot-field">Don't fill this out if you're human: </label>
+						<input id="bot-field" name="bot-field" />
+					</div>
+					<div class="form-floating mb-3">
+						<input type="text" class="form-control" id="promo-code" placeholder="XXX-XXXXX-XXXXX">
+						<label for="promo-code">Promo or Gift card</label>
+					</div>
+					<div class="col-12 my-3 d-grid">
+						<button type="submit" class="btn btn-outline-secondary">Redeem</button>
+					</div>
+				</form>
+			</div>
+		</section>
+	</main>
+</Layout>
